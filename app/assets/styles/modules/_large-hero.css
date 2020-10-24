@@ -13,12 +13,13 @@
         left: 0;
         width: 100%;
         text-align: center;     /*horizontaly align*/
+        padding-top: 60px;
        
     } 
 
     &__title {
         font-weight: 300;
-        color:$mainOrange;
+        color:$mainBlue;
         margin: 0;
         font-size: 2.4rem;
        
