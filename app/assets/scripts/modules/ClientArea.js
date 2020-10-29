@@ -18,7 +18,7 @@ class ClientArea {
     }
 
     sendRequest() {                        //catch if things fail then if things goes as planed
-        Axios.post('https://thirsty-heisenberg-f3da84.netlify.app/.netlify/functions/secret-area', {password: this.field.value}).then(() => {
+        Axios.post('https://thirsty-heisenberg-f3da84.netlify.app/.netlify/functions/secret-area', {password: this.field.value}).then(response => {
             this.form.remove()
             this.contentArea.innerHTML = response.data
         }).catch(() => {
