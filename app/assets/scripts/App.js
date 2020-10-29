@@ -4,12 +4,12 @@ import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
 
-let stickyHeader = new StickyHeader();
+
+new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 new RevealOnScroll(document.querySelectorAll(".features-item"), 75)
-let mobileMenu = new MobileMenu();
+new MobileMenu();
 let modal   //just to create global variable
-
 //loading model.js on the fly 
 document.querySelectorAll('.open-modal').forEach(el => {
     el.addEventListener("click", e => {
@@ -24,7 +24,6 @@ document.querySelectorAll('.open-modal').forEach(el => {
         }
     })
 })
-
 
 if (module.hot) {
     module.hot.accept()
